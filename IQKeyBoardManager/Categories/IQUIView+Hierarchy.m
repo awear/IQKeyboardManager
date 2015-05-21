@@ -95,6 +95,8 @@ Class UISearchBarTextFieldClass;        //UISearchBar
     
     UIViewController *topController = self.window.rootViewController;
     
+    if (!topController) return nil;
+    
     [controllersHierarchy addObject:topController];
     
     while ([topController presentedViewController]) {
